@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= title %></title>
+		<meta charset='utf-8'>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+		<link rel='stylesheet' href='/components/bootstrap/css/bootstrap.min.css'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+	<body>
+		<div class="container col-sm-offset-2 col-sm-8">
+		<h1><%= title %></h1>
+		<p>Welcome to <%= title %></p>
+		<p><%= msg %></p>
+		<h2>Cookie Form</h2>
+		<form method="post" action="/" class="form-horizontal">
+			<div class="form-group">
+			<input type="text" name="text1" placeholder="text">
+			<input type="submit" class="btn btn-primary">
+			</div>
+		</form>
+    <h2>Secction Form</h2>
+		<form method="post" action="/" class="form-horizontal">
+			<div class="form-group">
+			<label for="name">ID : </label>
+			<input type="text" name="name" id="name" class="form-control">
+			<label for="pass">Password : </label>
+			<input type="password" name="pass" id="pass" class="form-control">
+			<input type="submit" class="btn btn-primary">
+			</div>
+		</form>
+		</div>
+		<script src="/javascript/jquery.min.js"></script>
+		<script src="/components/bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>
